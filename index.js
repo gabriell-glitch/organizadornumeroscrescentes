@@ -8,5 +8,13 @@ let aux = numeros[i]
     }
   }
 }
-
- console.log(numeros)
+for (let i = 0; i < numeros.length; i++) {
+  for (let j = 0; j < numeros.length; j++) {
+    if(numeros[i] == numeros[j]) {
+      numeros.splice(j, 1)
+     j--
+    }
+  }
+}
+ 
+console.log(numeros)
